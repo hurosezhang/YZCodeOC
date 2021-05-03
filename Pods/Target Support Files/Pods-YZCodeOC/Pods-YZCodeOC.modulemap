@@ -1,0 +1,6 @@
+framework module Pods_YZCodeOC {
+  umbrella header "Pods-YZCodeOC-umbrella.h"
+
+  export *
+  module * { export * }
+}

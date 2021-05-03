@@ -6,6 +6,9 @@
 //
 
 #import "SceneDelegate.h"
+#import "YZNavgationController.h"
+#import "YZBaseViewController.h"
+#import "YZTabBarViewController.h"
 
 @interface SceneDelegate ()
 
@@ -18,6 +21,24 @@
     // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+    
+    
+    if (@available(ios 13, *)) {
+        if (scene) {
+            
+            UIWindow *window = [[UIWindow alloc] initWithWindowScene:(UIWindowScene *)scene];
+            self.window = window;
+            self.window.frame = [UIScreen mainScreen].bounds;
+            
+            YZTabBarViewController *tabbarVC = [[YZTabBarViewController alloc] init];
+            YZNavgationController *nav = [[YZNavgationController alloc] initWithRootViewController:tabbarVC];
+            window.rootViewController = nav;
+            
+            [window makeKeyAndVisible];
+
+            
+        }
+    }
 }
 
 

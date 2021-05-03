@@ -6,6 +6,8 @@
 //
 
 #import "AppDelegate.h"
+#import "YZNavgationController.h"
+#import "YZBaseViewController.h"
 
 @interface AppDelegate ()
 

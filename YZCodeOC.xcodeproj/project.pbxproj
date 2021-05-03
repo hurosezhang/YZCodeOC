@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10DE6231A7D6C17A6E9D88EB /* Pods_YZCodeOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB59674D5D13F16B46EFC5EC /* Pods_YZCodeOC.framework */; };
+		1E0C3F5B24741A55D0192DCF /* Pods_YZCodeOCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24225FD5A343DD764D84E984 /* Pods_YZCodeOCTests.framework */; };
 		971D90BD263E9BCB0043DBEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 971D90BC263E9BCB0043DBEC /* AppDelegate.m */; };
 		971D90C0263E9BCB0043DBEC /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 971D90BF263E9BCB0043DBEC /* SceneDelegate.m */; };
 		971D90C3263E9BCB0043DBEC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 971D90C2263E9BCB0043DBEC /* ViewController.m */; };
@@ -16,6 +18,12 @@
 		971D90CE263E9BCC0043DBEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 971D90CD263E9BCC0043DBEC /* main.m */; };
 		971D90D8263E9BCC0043DBEC /* YZCodeOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 971D90D7263E9BCC0043DBEC /* YZCodeOCTests.m */; };
 		971D90E3263E9BCC0043DBEC /* YZCodeOCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 971D90E2263E9BCC0043DBEC /* YZCodeOCUITests.m */; };
+		971D90FC263E9C6F0043DBEC /* YZBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 971D90FB263E9C6F0043DBEC /* YZBaseViewController.m */; };
+		971D9105263E9C9D0043DBEC /* YZNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 971D9104263E9C9D0043DBEC /* YZNavgationController.m */; };
+		971D910B263E9CCE0043DBEC /* YZTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 971D910A263E9CCE0043DBEC /* YZTabBarViewController.m */; };
+		971D9112263EA8A20043DBEC /* YZHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 971D9111263EA8A20043DBEC /* YZHomeVC.m */; };
+		971D911B263EA8B40043DBEC /* YZMineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 971D911A263EA8B40043DBEC /* YZMineVC.m */; };
+		C74F2284C8166C78393286CD /* Pods_YZCodeOC_YZCodeOCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F704FD4883044A0141ACED9D /* Pods_YZCodeOC_YZCodeOCUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14CB30AB62AE8E752C058DEC /* Pods-YZCodeOC-YZCodeOCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YZCodeOC-YZCodeOCUITests.release.xcconfig"; path = "Target Support Files/Pods-YZCodeOC-YZCodeOCUITests/Pods-YZCodeOC-YZCodeOCUITests.release.xcconfig"; sourceTree = "<group>"; };
+		24225FD5A343DD764D84E984 /* Pods_YZCodeOCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YZCodeOCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26E403DAD7A1F9DF74D59FCC /* Pods-YZCodeOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YZCodeOC.debug.xcconfig"; path = "Target Support Files/Pods-YZCodeOC/Pods-YZCodeOC.debug.xcconfig"; sourceTree = "<group>"; };
+		4A0B8D03CFBE37D72258B7DE /* Pods-YZCodeOCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YZCodeOCTests.release.xcconfig"; path = "Target Support Files/Pods-YZCodeOCTests/Pods-YZCodeOCTests.release.xcconfig"; sourceTree = "<group>"; };
+		5FB48C242C9C5DFD90603E56 /* Pods-YZCodeOCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YZCodeOCTests.debug.xcconfig"; path = "Target Support Files/Pods-YZCodeOCTests/Pods-YZCodeOCTests.debug.xcconfig"; sourceTree = "<group>"; };
 		971D90B8263E9BCB0043DBEC /* YZCodeOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YZCodeOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		971D90BB263E9BCB0043DBEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		971D90BC263E9BCB0043DBEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +67,20 @@
 		971D90DE263E9BCC0043DBEC /* YZCodeOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YZCodeOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		971D90E2263E9BCC0043DBEC /* YZCodeOCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZCodeOCUITests.m; sourceTree = "<group>"; };
 		971D90E4263E9BCC0043DBEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		971D90FA263E9C6E0043DBEC /* YZBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZBaseViewController.h; sourceTree = "<group>"; };
+		971D90FB263E9C6F0043DBEC /* YZBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZBaseViewController.m; sourceTree = "<group>"; };
+		971D9103263E9C9D0043DBEC /* YZNavgationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZNavgationController.h; sourceTree = "<group>"; };
+		971D9104263E9C9D0043DBEC /* YZNavgationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZNavgationController.m; sourceTree = "<group>"; };
+		971D9109263E9CCE0043DBEC /* YZTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZTabBarViewController.h; sourceTree = "<group>"; };
+		971D910A263E9CCE0043DBEC /* YZTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZTabBarViewController.m; sourceTree = "<group>"; };
+		971D9110263EA8A20043DBEC /* YZHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZHomeVC.h; sourceTree = "<group>"; };
+		971D9111263EA8A20043DBEC /* YZHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZHomeVC.m; sourceTree = "<group>"; };
+		971D9119263EA8B40043DBEC /* YZMineVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZMineVC.h; sourceTree = "<group>"; };
+		971D911A263EA8B40043DBEC /* YZMineVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZMineVC.m; sourceTree = "<group>"; };
+		CB59674D5D13F16B46EFC5EC /* Pods_YZCodeOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YZCodeOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D243C10DEE57302667A1DA0A /* Pods-YZCodeOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YZCodeOC.release.xcconfig"; path = "Target Support Files/Pods-YZCodeOC/Pods-YZCodeOC.release.xcconfig"; sourceTree = "<group>"; };
+		DD1C0B587C63A844E4036163 /* Pods-YZCodeOC-YZCodeOCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YZCodeOC-YZCodeOCUITests.debug.xcconfig"; path = "Target Support Files/Pods-YZCodeOC-YZCodeOCUITests/Pods-YZCodeOC-YZCodeOCUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F704FD4883044A0141ACED9D /* Pods_YZCodeOC_YZCodeOCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YZCodeOC_YZCodeOCUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10DE6231A7D6C17A6E9D88EB /* Pods_YZCodeOC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E0C3F5B24741A55D0192DCF /* Pods_YZCodeOCTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,12 +104,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C74F2284C8166C78393286CD /* Pods_YZCodeOC_YZCodeOCUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43207BFBE82101949E4E59D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26E403DAD7A1F9DF74D59FCC /* Pods-YZCodeOC.debug.xcconfig */,
+				D243C10DEE57302667A1DA0A /* Pods-YZCodeOC.release.xcconfig */,
+				DD1C0B587C63A844E4036163 /* Pods-YZCodeOC-YZCodeOCUITests.debug.xcconfig */,
+				14CB30AB62AE8E752C058DEC /* Pods-YZCodeOC-YZCodeOCUITests.release.xcconfig */,
+				5FB48C242C9C5DFD90603E56 /* Pods-YZCodeOCTests.debug.xcconfig */,
+				4A0B8D03CFBE37D72258B7DE /* Pods-YZCodeOCTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		971D90AF263E9BCA0043DBEC = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +131,8 @@
 				971D90D6263E9BCC0043DBEC /* YZCodeOCTests */,
 				971D90E1263E9BCC0043DBEC /* YZCodeOCUITests */,
 				971D90B9263E9BCB0043DBEC /* Products */,
+				43207BFBE82101949E4E59D1 /* Pods */,
+				DE5C3DC3DD1BDD5E7995EC7B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,17 +149,9 @@
 		971D90BA263E9BCB0043DBEC /* YZCodeOC */ = {
 			isa = PBXGroup;
 			children = (
-				971D90BB263E9BCB0043DBEC /* AppDelegate.h */,
-				971D90BC263E9BCB0043DBEC /* AppDelegate.m */,
-				971D90BE263E9BCB0043DBEC /* SceneDelegate.h */,
-				971D90BF263E9BCB0043DBEC /* SceneDelegate.m */,
-				971D90C1263E9BCB0043DBEC /* ViewController.h */,
-				971D90C2263E9BCB0043DBEC /* ViewController.m */,
-				971D90C4263E9BCB0043DBEC /* Main.storyboard */,
-				971D90C7263E9BCC0043DBEC /* Assets.xcassets */,
-				971D90C9263E9BCC0043DBEC /* LaunchScreen.storyboard */,
-				971D90CC263E9BCC0043DBEC /* Info.plist */,
-				971D90CD263E9BCC0043DBEC /* main.m */,
+				971D910F263EA8770043DBEC /* Main */,
+				971D9121263EACAA0043DBEC /* Other */,
+				971D90F9263E9C500043DBEC /* Base */,
 			);
 			path = YZCodeOC;
 			sourceTree = "<group>";
@@ -137,6 +174,74 @@
 			path = YZCodeOCUITests;
 			sourceTree = "<group>";
 		};
+		971D90F9263E9C500043DBEC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				971D90FA263E9C6E0043DBEC /* YZBaseViewController.h */,
+				971D90FB263E9C6F0043DBEC /* YZBaseViewController.m */,
+				971D9103263E9C9D0043DBEC /* YZNavgationController.h */,
+				971D9104263E9C9D0043DBEC /* YZNavgationController.m */,
+				971D9109263E9CCE0043DBEC /* YZTabBarViewController.h */,
+				971D910A263E9CCE0043DBEC /* YZTabBarViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		971D910F263EA8770043DBEC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				971D9120263EAC9B0043DBEC /* Mine */,
+				971D911F263EAC8C0043DBEC /* Home */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		971D911F263EAC8C0043DBEC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				971D9110263EA8A20043DBEC /* YZHomeVC.h */,
+				971D9111263EA8A20043DBEC /* YZHomeVC.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		971D9120263EAC9B0043DBEC /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				971D9119263EA8B40043DBEC /* YZMineVC.h */,
+				971D911A263EA8B40043DBEC /* YZMineVC.m */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		971D9121263EACAA0043DBEC /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				971D90BB263E9BCB0043DBEC /* AppDelegate.h */,
+				971D90BC263E9BCB0043DBEC /* AppDelegate.m */,
+				971D90BE263E9BCB0043DBEC /* SceneDelegate.h */,
+				971D90BF263E9BCB0043DBEC /* SceneDelegate.m */,
+				971D90C1263E9BCB0043DBEC /* ViewController.h */,
+				971D90C2263E9BCB0043DBEC /* ViewController.m */,
+				971D90C4263E9BCB0043DBEC /* Main.storyboard */,
+				971D90C7263E9BCC0043DBEC /* Assets.xcassets */,
+				971D90C9263E9BCC0043DBEC /* LaunchScreen.storyboard */,
+				971D90CC263E9BCC0043DBEC /* Info.plist */,
+				971D90CD263E9BCC0043DBEC /* main.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		DE5C3DC3DD1BDD5E7995EC7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB59674D5D13F16B46EFC5EC /* Pods_YZCodeOC.framework */,
+				F704FD4883044A0141ACED9D /* Pods_YZCodeOC_YZCodeOCUITests.framework */,
+				24225FD5A343DD764D84E984 /* Pods_YZCodeOCTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +249,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 971D90E7263E9BCC0043DBEC /* Build configuration list for PBXNativeTarget "YZCodeOC" */;
 			buildPhases = (
+				F3CF1A99983BC8932A770CD5 /* [CP] Check Pods Manifest.lock */,
 				971D90B4263E9BCB0043DBEC /* Sources */,
 				971D90B5263E9BCB0043DBEC /* Frameworks */,
 				971D90B6263E9BCB0043DBEC /* Resources */,
+				08F8CD7C69D08E9562C2160B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,6 +268,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 971D90EA263E9BCC0043DBEC /* Build configuration list for PBXNativeTarget "YZCodeOCTests" */;
 			buildPhases = (
+				41F57E625F675C29D559B8AD /* [CP] Check Pods Manifest.lock */,
 				971D90CF263E9BCC0043DBEC /* Sources */,
 				971D90D0263E9BCC0043DBEC /* Frameworks */,
 				971D90D1263E9BCC0043DBEC /* Resources */,
@@ -179,9 +287,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 971D90ED263E9BCC0043DBEC /* Build configuration list for PBXNativeTarget "YZCodeOCUITests" */;
 			buildPhases = (
+				565B7D7E36DF3CA33C02D84D /* [CP] Check Pods Manifest.lock */,
 				971D90DA263E9BCC0043DBEC /* Sources */,
 				971D90DB263E9BCC0043DBEC /* Frameworks */,
 				971D90DC263E9BCC0043DBEC /* Resources */,
+				69919878A526AC214FB293C3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,14 +371,122 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		08F8CD7C69D08E9562C2160B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YZCodeOC/Pods-YZCodeOC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YZCodeOC/Pods-YZCodeOC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YZCodeOC/Pods-YZCodeOC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41F57E625F675C29D559B8AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YZCodeOCTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		565B7D7E36DF3CA33C02D84D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YZCodeOC-YZCodeOCUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69919878A526AC214FB293C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YZCodeOC-YZCodeOCUITests/Pods-YZCodeOC-YZCodeOCUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YZCodeOC-YZCodeOCUITests/Pods-YZCodeOC-YZCodeOCUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YZCodeOC-YZCodeOCUITests/Pods-YZCodeOC-YZCodeOCUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3CF1A99983BC8932A770CD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YZCodeOC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		971D90B4263E9BCB0043DBEC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				971D911B263EA8B40043DBEC /* YZMineVC.m in Sources */,
 				971D90C3263E9BCB0043DBEC /* ViewController.m in Sources */,
 				971D90BD263E9BCB0043DBEC /* AppDelegate.m in Sources */,
+				971D9112263EA8A20043DBEC /* YZHomeVC.m in Sources */,
 				971D90CE263E9BCC0043DBEC /* main.m in Sources */,
+				971D90FC263E9C6F0043DBEC /* YZBaseViewController.m in Sources */,
+				971D9105263E9C9D0043DBEC /* YZNavgationController.m in Sources */,
+				971D910B263E9CCE0043DBEC /* YZTabBarViewController.m in Sources */,
 				971D90C0263E9BCB0043DBEC /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,12 +656,13 @@
 		};
 		971D90E8263E9BCC0043DBEC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26E403DAD7A1F9DF74D59FCC /* Pods-YZCodeOC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YW94R7VL42;
-				INFOPLIST_FILE = YZCodeOC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/YZCodeOC/Other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,12 +675,13 @@
 		};
 		971D90E9263E9BCC0043DBEC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D243C10DEE57302667A1DA0A /* Pods-YZCodeOC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YW94R7VL42;
-				INFOPLIST_FILE = YZCodeOC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/YZCodeOC/Other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -474,6 +694,7 @@
 		};
 		971D90EB263E9BCC0043DBEC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FB48C242C9C5DFD90603E56 /* Pods-YZCodeOCTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -494,6 +715,7 @@
 		};
 		971D90EC263E9BCC0043DBEC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A0B8D03CFBE37D72258B7DE /* Pods-YZCodeOCTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -514,6 +736,7 @@
 		};
 		971D90EE263E9BCC0043DBEC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD1C0B587C63A844E4036163 /* Pods-YZCodeOC-YZCodeOCUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YW94R7VL42;
@@ -532,6 +755,7 @@
 		};
 		971D90EF263E9BCC0043DBEC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14CB30AB62AE8E752C058DEC /* Pods-YZCodeOC-YZCodeOCUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YW94R7VL42;
