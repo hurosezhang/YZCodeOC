@@ -1,0 +1,15 @@
+//
+//  YZPrefixHeader.pch
+//  YZCodeOC
+//
+//  Created by zhangyongkang01 on 2021/5/4.
+//
+
+#ifndef YZPrefixHeader_pch
+#define YZPrefixHeader_pch
+
+#import "YZMacros.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* YZPrefixHeader_pch */

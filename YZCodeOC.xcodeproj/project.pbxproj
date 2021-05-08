@@ -23,6 +23,10 @@
 		971D910B263E9CCE0043DBEC /* YZTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 971D910A263E9CCE0043DBEC /* YZTabBarViewController.m */; };
 		971D9112263EA8A20043DBEC /* YZHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 971D9111263EA8A20043DBEC /* YZHomeVC.m */; };
 		971D911B263EA8B40043DBEC /* YZMineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 971D911A263EA8B40043DBEC /* YZMineVC.m */; };
+		971D9137263FFDC30043DBEC /* YZCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 971D9136263FFDC30043DBEC /* YZCollectionVC.m */; };
+		971D9145264170480043DBEC /* YZColorAndFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 971D913F264170470043DBEC /* YZColorAndFont.m */; };
+		971D9146264170480043DBEC /* YZScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 971D9142264170470043DBEC /* YZScreen.m */; };
+		9789E96F26466A01002DB084 /* YZCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9789E96E26466A01002DB084 /* YZCollectionCell.m */; };
 		C74F2284C8166C78393286CD /* Pods_YZCodeOC_YZCodeOCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F704FD4883044A0141ACED9D /* Pods_YZCodeOC_YZCodeOCUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +81,17 @@
 		971D9111263EA8A20043DBEC /* YZHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZHomeVC.m; sourceTree = "<group>"; };
 		971D9119263EA8B40043DBEC /* YZMineVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZMineVC.h; sourceTree = "<group>"; };
 		971D911A263EA8B40043DBEC /* YZMineVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZMineVC.m; sourceTree = "<group>"; };
+		971D9135263FFDC30043DBEC /* YZCollectionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZCollectionVC.h; sourceTree = "<group>"; };
+		971D9136263FFDC30043DBEC /* YZCollectionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZCollectionVC.m; sourceTree = "<group>"; };
+		971D913C264170470043DBEC /* YZMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZMacros.h; sourceTree = "<group>"; };
+		971D913E264170470043DBEC /* YZColorAndFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZColorAndFont.h; sourceTree = "<group>"; };
+		971D913F264170470043DBEC /* YZColorAndFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZColorAndFont.m; sourceTree = "<group>"; };
+		971D9141264170470043DBEC /* YZScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZScreen.h; sourceTree = "<group>"; };
+		971D9142264170470043DBEC /* YZScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZScreen.m; sourceTree = "<group>"; };
+		971D9144264170470043DBEC /* YZSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZSingleton.h; sourceTree = "<group>"; };
+		971D914A264170F50043DBEC /* YZPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZPrefixHeader.pch; sourceTree = "<group>"; };
+		9789E96D26466A01002DB084 /* YZCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZCollectionCell.h; sourceTree = "<group>"; };
+		9789E96E26466A01002DB084 /* YZCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZCollectionCell.m; sourceTree = "<group>"; };
 		CB59674D5D13F16B46EFC5EC /* Pods_YZCodeOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YZCodeOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D243C10DEE57302667A1DA0A /* Pods-YZCodeOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YZCodeOC.release.xcconfig"; path = "Target Support Files/Pods-YZCodeOC/Pods-YZCodeOC.release.xcconfig"; sourceTree = "<group>"; };
 		DD1C0B587C63A844E4036163 /* Pods-YZCodeOC-YZCodeOCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YZCodeOC-YZCodeOCUITests.debug.xcconfig"; path = "Target Support Files/Pods-YZCodeOC-YZCodeOCUITests/Pods-YZCodeOC-YZCodeOCUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +164,7 @@
 		971D90BA263E9BCB0043DBEC /* YZCodeOC */ = {
 			isa = PBXGroup;
 			children = (
+				971D913B264170470043DBEC /* YZMacrosKit */,
 				971D910F263EA8770043DBEC /* Main */,
 				971D9121263EACAA0043DBEC /* Other */,
 				971D90F9263E9C500043DBEC /* Base */,
@@ -201,6 +217,10 @@
 			children = (
 				971D9110263EA8A20043DBEC /* YZHomeVC.h */,
 				971D9111263EA8A20043DBEC /* YZHomeVC.m */,
+				971D9135263FFDC30043DBEC /* YZCollectionVC.h */,
+				971D9136263FFDC30043DBEC /* YZCollectionVC.m */,
+				9789E96D26466A01002DB084 /* YZCollectionCell.h */,
+				9789E96E26466A01002DB084 /* YZCollectionCell.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -228,8 +248,46 @@
 				971D90C9263E9BCC0043DBEC /* LaunchScreen.storyboard */,
 				971D90CC263E9BCC0043DBEC /* Info.plist */,
 				971D90CD263E9BCC0043DBEC /* main.m */,
+				971D914A264170F50043DBEC /* YZPrefixHeader.pch */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		971D913B264170470043DBEC /* YZMacrosKit */ = {
+			isa = PBXGroup;
+			children = (
+				971D913C264170470043DBEC /* YZMacros.h */,
+				971D913D264170470043DBEC /* YZColorAndFont */,
+				971D9140264170470043DBEC /* YZScreen */,
+				971D9143264170470043DBEC /* YZSingle(单例宏) */,
+			);
+			path = YZMacrosKit;
+			sourceTree = "<group>";
+		};
+		971D913D264170470043DBEC /* YZColorAndFont */ = {
+			isa = PBXGroup;
+			children = (
+				971D913E264170470043DBEC /* YZColorAndFont.h */,
+				971D913F264170470043DBEC /* YZColorAndFont.m */,
+			);
+			path = YZColorAndFont;
+			sourceTree = "<group>";
+		};
+		971D9140264170470043DBEC /* YZScreen */ = {
+			isa = PBXGroup;
+			children = (
+				971D9141264170470043DBEC /* YZScreen.h */,
+				971D9142264170470043DBEC /* YZScreen.m */,
+			);
+			path = YZScreen;
+			sourceTree = "<group>";
+		};
+		971D9143264170470043DBEC /* YZSingle(单例宏) */ = {
+			isa = PBXGroup;
+			children = (
+				971D9144264170470043DBEC /* YZSingleton.h */,
+			);
+			path = "YZSingle(单例宏)";
 			sourceTree = "<group>";
 		};
 		DE5C3DC3DD1BDD5E7995EC7B /* Frameworks */ = {
@@ -482,9 +540,13 @@
 				971D911B263EA8B40043DBEC /* YZMineVC.m in Sources */,
 				971D90C3263E9BCB0043DBEC /* ViewController.m in Sources */,
 				971D90BD263E9BCB0043DBEC /* AppDelegate.m in Sources */,
+				971D9145264170480043DBEC /* YZColorAndFont.m in Sources */,
+				971D9137263FFDC30043DBEC /* YZCollectionVC.m in Sources */,
+				9789E96F26466A01002DB084 /* YZCollectionCell.m in Sources */,
 				971D9112263EA8A20043DBEC /* YZHomeVC.m in Sources */,
 				971D90CE263E9BCC0043DBEC /* main.m in Sources */,
 				971D90FC263E9C6F0043DBEC /* YZBaseViewController.m in Sources */,
+				971D9146264170480043DBEC /* YZScreen.m in Sources */,
 				971D9105263E9C9D0043DBEC /* YZNavgationController.m in Sources */,
 				971D910B263E9CCE0043DBEC /* YZTabBarViewController.m in Sources */,
 				971D90C0263E9BCB0043DBEC /* SceneDelegate.m in Sources */,
@@ -583,6 +645,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -640,6 +703,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -662,6 +726,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YW94R7VL42;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YZCodeOC/Other/YZPrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/YZCodeOC/Other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -681,6 +747,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YW94R7VL42;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YZCodeOC/Other/YZPrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/YZCodeOC/Other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
