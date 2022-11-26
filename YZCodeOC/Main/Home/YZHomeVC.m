@@ -31,8 +31,6 @@
 }
 
 
-
-
 - (void)yibuxieru {
     // 可以异步写入
     dispatch_async(dispatch_get_global_queue(0,0), ^{

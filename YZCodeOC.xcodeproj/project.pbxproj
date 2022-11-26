@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04C30D82293253CE004DC597 /* YZNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C30D81293253CE004DC597 /* YZNetWork.m */; };
+		04C31008293256A0004DC597 /* YZURLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C31007293256A0004DC597 /* YZURLManager.m */; };
 		10DE6231A7D6C17A6E9D88EB /* Pods_YZCodeOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB59674D5D13F16B46EFC5EC /* Pods_YZCodeOC.framework */; };
 		1E0C3F5B24741A55D0192DCF /* Pods_YZCodeOCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24225FD5A343DD764D84E984 /* Pods_YZCodeOCTests.framework */; };
 		971D90BD263E9BCB0043DBEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 971D90BC263E9BCB0043DBEC /* AppDelegate.m */; };
@@ -53,6 +55,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04C30D80293253CE004DC597 /* YZNetWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZNetWork.h; sourceTree = "<group>"; };
+		04C30D81293253CE004DC597 /* YZNetWork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZNetWork.m; sourceTree = "<group>"; };
+		04C31006293256A0004DC597 /* YZURLManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZURLManager.h; sourceTree = "<group>"; };
+		04C31007293256A0004DC597 /* YZURLManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZURLManager.m; sourceTree = "<group>"; };
 		14CB30AB62AE8E752C058DEC /* Pods-YZCodeOC-YZCodeOCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YZCodeOC-YZCodeOCUITests.release.xcconfig"; path = "Target Support Files/Pods-YZCodeOC-YZCodeOCUITests/Pods-YZCodeOC-YZCodeOCUITests.release.xcconfig"; sourceTree = "<group>"; };
 		24225FD5A343DD764D84E984 /* Pods_YZCodeOCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YZCodeOCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26E403DAD7A1F9DF74D59FCC /* Pods-YZCodeOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YZCodeOC.debug.xcconfig"; path = "Target Support Files/Pods-YZCodeOC/Pods-YZCodeOC.debug.xcconfig"; sourceTree = "<group>"; };
@@ -143,6 +149,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04C30D7F29325385004DC597 /* YZNetWork */ = {
+			isa = PBXGroup;
+			children = (
+				04C30D80293253CE004DC597 /* YZNetWork.h */,
+				04C30D81293253CE004DC597 /* YZNetWork.m */,
+			);
+			path = YZNetWork;
+			sourceTree = "<group>";
+		};
+		04C310052932567A004DC597 /* YZURLManager */ = {
+			isa = PBXGroup;
+			children = (
+				04C31006293256A0004DC597 /* YZURLManager.h */,
+				04C31007293256A0004DC597 /* YZURLManager.m */,
+			);
+			path = YZURLManager;
+			sourceTree = "<group>";
+		};
 		43207BFBE82101949E4E59D1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +247,8 @@
 		971D910F263EA8770043DBEC /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				04C310052932567A004DC597 /* YZURLManager */,
+				04C30D7F29325385004DC597 /* YZNetWork */,
 				971D911F263EAC8C0043DBEC /* Home */,
 				971D9120263EAC9B0043DBEC /* Mine */,
 			);
@@ -584,6 +610,7 @@
 			files = (
 				975E4A042763260B0007BE91 /* YZBaseObject.m in Sources */,
 				971D911B263EA8B40043DBEC /* YZMineVC.m in Sources */,
+				04C31008293256A0004DC597 /* YZURLManager.m in Sources */,
 				971D90C3263E9BCB0043DBEC /* ViewController.m in Sources */,
 				971D90BD263E9BCB0043DBEC /* AppDelegate.m in Sources */,
 				971D9145264170480043DBEC /* YZColorAndFont.m in Sources */,
@@ -600,6 +627,7 @@
 				971D90C0263E9BCB0043DBEC /* SceneDelegate.m in Sources */,
 				97E195E326D6827E0004423A /* YZItemCell.m in Sources */,
 				97E195DD26D67DE30004423A /* YZItemModel.m in Sources */,
+				04C30D82293253CE004DC597 /* YZNetWork.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
