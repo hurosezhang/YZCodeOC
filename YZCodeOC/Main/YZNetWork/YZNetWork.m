@@ -12,11 +12,17 @@ NSInteger const YZNetworkingTimeOutInterval = 10;
 
 static AFHTTPSessionManager *manager;
 
+/**
+ @"app_secret":@"MEZoeDhIa01ZTmY2dWV2K3RyQ3BEdz09",
+ @"app_id":@"rorrgvefkebsoxs0"
+ */
+
 @implementation YZNetWork
  
 + (AFHTTPSessionManager *)sharedAFManager {
     static dispatch_once_t onceToke;
     dispatch_once(&onceToke, ^{
+        manager = [AFHTTPSessionManager manager];
         //以下三项manager的属性根据需要进行配置
         manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"text/xml",@"text/json",@"text/plain",@"text/JavaScript",@"application/json",@"image/jpeg",@"image/png",@"application/octet-stream",nil];
             

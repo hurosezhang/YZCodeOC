@@ -8,6 +8,8 @@
 #import "YZHomeVC.h"
 #import "YZCollectionVC.h"
 #import "YZSubObject.h"
+#import "YZNetWork.h"
+
 @interface YZHomeVC ()<UITableViewDataSource,UITableViewDelegate>
 @property(nonatomic,strong)UITableView *tableView;
 
@@ -18,15 +20,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    YZSubObject *subObject = [YZSubObject new];
-    
-    [subObject noImplFunc];
-   NSString *str = [subObject noImplStringFunc];
-    NSLog(@"===%@",str);
-    
-    YZSubObject *obj = [subObject noImplFuncwithParam:@"123" Param2:@{@"1":@"2"}];
-    NSLog(@"++++%@",obj);
 
+    NSString *url = @"https://www.mxnzp.com/api/image/girl/list/random?app_id=rorrgvefkebsoxs0&app_secret=MEZoeDhIa01ZTmY2dWV2K3RyQ3BEdz09";
+    url = @"https://www.mxnzp.com/api/image/girl/list/random";
+    NSDictionary *params = @{
+        @"app_secret":@"MEZoeDhIa01ZTmY2dWV2K3RyQ3BEdz09",
+        @"app_id":@"rorrgvefkebsoxs0"
+    };
+    [YZNetWork requestWithType:YZHttpRequestTypeGet urlString:url paramters:params successBlock:^(id  _Nonnull responseObject) {
+        NSLog(@"---%@",responseObject);
+    } failureBlock:^(NSError * _Nonnull error) {
+        NSLog(@"---%@",error);
+
+    }];
 
 }
 
