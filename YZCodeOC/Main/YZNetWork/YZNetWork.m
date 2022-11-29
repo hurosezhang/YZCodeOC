@@ -16,6 +16,8 @@ static AFHTTPSessionManager *manager;
  @"app_secret":@"MEZoeDhIa01ZTmY2dWV2K3RyQ3BEdz09",
  @"app_id":@"rorrgvefkebsoxs0"
  */
+#define kApp_secret  @"MEZoeDhIa01ZTmY2dWV2K3RyQ3BEdz09"
+#define kApp_id  @"rorrgvefkebsoxs0"
 
 @implementation YZNetWork
  
@@ -38,13 +40,20 @@ static AFHTTPSessionManager *manager;
     if (urlString == nil) {
         return;
     }
+    
+    // 将app_secret，app_id 加入到参数里
+    NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithDictionary:@{
+        @"app_secret":kApp_secret,
+        @"app_id":kApp_id
+    }];
+    [dic addEntriesFromDictionary:paramters];
     urlString = [urlString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
     
     AFHTTPSessionManager *manager = [self sharedAFManager];
     NSDictionary *headers = [NSDictionary dictionary];
 
     if (type == YZHttpRequestTypeGet) {
-        [manager GET:urlString parameters:paramters headers:headers progress:^(NSProgress * _Nonnull downloadProgress) {
+        [manager GET:urlString parameters:dic headers:headers progress:^(NSProgress * _Nonnull downloadProgress) {
             
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             if (successBlock) {
@@ -79,6 +88,20 @@ static AFHTTPSessionManager *manager;
         
     } else {
         NSLog(@"既不是post也不是get请求");
+    }
+}
+
++ (void)requestWithGetTypeurlString:(NSString *)urlString
+           successBlock:(YZHttpRequestSuccessBlock)successBlock
+                       failureBlock:(YZHttpRequestFaildBlock)failureBlock {
+    [self requestWithType:YZHttpRequestTypeGet urlString:urlString paramters:[NSDictionary dictionary] successBlock:successBlock failureBlock:failureBlock];
+}
+
+
++ (void)cancelDataTask {
+    NSMutableArray *dataTasks = [NSMutableArray arrayWithArray:[self sharedAFManager].dataTasks];
+    for (NSURLSessionDataTask *taskObj in dataTasks) {
+        [taskObj cancel];
     }
 }
 

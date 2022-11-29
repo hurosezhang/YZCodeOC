@@ -21,17 +21,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
-    NSString *url = @"https://www.mxnzp.com/api/image/girl/list/random?app_id=rorrgvefkebsoxs0&app_secret=MEZoeDhIa01ZTmY2dWV2K3RyQ3BEdz09";
-    url = @"https://www.mxnzp.com/api/image/girl/list/random";
-    NSDictionary *params = @{
-        @"app_secret":@"MEZoeDhIa01ZTmY2dWV2K3RyQ3BEdz09",
-        @"app_id":@"rorrgvefkebsoxs0"
-    };
-    [YZNetWork requestWithType:YZHttpRequestTypeGet urlString:url paramters:params successBlock:^(id  _Nonnull responseObject) {
+    NSString *url = @"https://www.mxnzp.com/api/image/girl/list/random";
+    [YZNetWork requestWithGetTypeurlString:url successBlock:^(id  _Nonnull responseObject) {
         NSLog(@"---%@",responseObject);
     } failureBlock:^(NSError * _Nonnull error) {
         NSLog(@"---%@",error);
-
     }];
 
 }

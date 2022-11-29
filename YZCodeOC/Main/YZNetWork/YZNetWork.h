@@ -24,9 +24,20 @@ extern NSInteger const YZNetworkingTimeOutInterval;
 
 @interface YZNetWork : NSObject
 
+
+/// 网络请求的核心方法
+/// @param type get or post
+/// @param urlString url
+/// @param paramters paramters
+/// @param successBlock 成功的回调
+/// @param failureBlock 失败的回调
 + (void)requestWithType:(YZHttpRequestType)type
               urlString:(NSString *)urlString
               paramters:(NSDictionary *)paramters
+           successBlock:(YZHttpRequestSuccessBlock)successBlock
+           failureBlock:(YZHttpRequestFaildBlock)failureBlock;
+
++ (void)requestWithGetTypeurlString:(NSString *)urlString
            successBlock:(YZHttpRequestSuccessBlock)successBlock
            failureBlock:(YZHttpRequestFaildBlock)failureBlock;
 
