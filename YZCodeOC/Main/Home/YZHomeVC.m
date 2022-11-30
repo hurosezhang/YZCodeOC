@@ -9,9 +9,12 @@
 #import "YZCollectionVC.h"
 #import "YZSubObject.h"
 #import "YZNetWork.h"
+#import "YZGirlModel.h"
+#import "YZHomeCell.h"
 
 @interface YZHomeVC ()<UITableViewDataSource,UITableViewDelegate>
 @property(nonatomic,strong)UITableView *tableView;
+@property(nonatomic,strong)YZGirlModel *girlModel;
 
 @end
 
@@ -20,48 +23,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
+    self.title = @"首页";
+    [self setUpView];
     NSString *url = @"https://www.mxnzp.com/api/image/girl/list/random";
+    
+    // 防止循环引用，后续要补上
     [YZNetWork requestWithGetTypeurlString:url successBlock:^(id  _Nonnull responseObject) {
         NSLog(@"---%@",responseObject);
+        
+        YZGirlModel *girlModel = [YZGirlModel girlModelWithData:responseObject];
+        NSLog(@"---%@",girlModel);
+        self.girlModel = girlModel;
     } failureBlock:^(NSError * _Nonnull error) {
         NSLog(@"---%@",error);
     }];
-
-}
-
-
-- (void)yibuxieru {
-    // 可以异步写入
-    dispatch_async(dispatch_get_global_queue(0,0), ^{
-        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"test"];
-    });
-    NSLog(@"------%d", [[NSUserDefaults standardUserDefaults] boolForKey:@"test"]);
-}
-
-- (void)zixianchengdiaoyongUI {
-    
-    // 子线程设置UI
-    int R = (arc4random() % 256);
-    int G = (arc4random() % 256);
-    int B = (arc4random() % 256);
-    NSLog(@"touchesBegan");
-    // 子线程调用UI 不是必现crash的，但是在控制台会有输出
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        [UIView new].backgroundColor = [UIColor colorWithRed:R / 255.0 green:G / 255.0 blue:B / 255.0 alpha:1];
-    });
-    
-    // 子线程取出UI,也会造成性能问题
-    //    dispatch_async(dispatch_get_global_queue(0,0), ^{
-    //        CGFloat aa = newView.frame.origin.y;
-    //    });
-
-        dispatch_async(dispatch_get_global_queue(0,0), ^{
-            dispatch_async(dispatch_get_main_queue(), ^{
-//                CGFloat bb = newView.frame.origin.y;
-
-            });
-        });
 
 }
 
@@ -84,8 +59,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath  {
     
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@""];
-    
+    YZHomeCell *cell =[YZHomeCell cellWithTableView:tableView];
     return  cell;
     
 }

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041177ED2936E6B800E92F14 /* YZGirlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 041177EC2936E6B800E92F14 /* YZGirlModel.m */; };
+		041177F02936E71600E92F14 /* YZBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 041177EF2936E71600E92F14 /* YZBaseModel.m */; };
+		041177F42936EDB600E92F14 /* YZHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 041177F32936EDB600E92F14 /* YZHomeCell.m */; };
 		04C30D82293253CE004DC597 /* YZNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C30D81293253CE004DC597 /* YZNetWork.m */; };
 		04C31008293256A0004DC597 /* YZURLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C31007293256A0004DC597 /* YZURLManager.m */; };
 		10DE6231A7D6C17A6E9D88EB /* Pods_YZCodeOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB59674D5D13F16B46EFC5EC /* Pods_YZCodeOC.framework */; };
@@ -55,6 +58,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		041177EB2936E6B800E92F14 /* YZGirlModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZGirlModel.h; sourceTree = "<group>"; };
+		041177EC2936E6B800E92F14 /* YZGirlModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZGirlModel.m; sourceTree = "<group>"; };
+		041177EE2936E71600E92F14 /* YZBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZBaseModel.h; sourceTree = "<group>"; };
+		041177EF2936E71600E92F14 /* YZBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZBaseModel.m; sourceTree = "<group>"; };
+		041177F22936EDB600E92F14 /* YZHomeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZHomeCell.h; sourceTree = "<group>"; };
+		041177F32936EDB600E92F14 /* YZHomeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZHomeCell.m; sourceTree = "<group>"; };
 		04C30D80293253CE004DC597 /* YZNetWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZNetWork.h; sourceTree = "<group>"; };
 		04C30D81293253CE004DC597 /* YZNetWork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZNetWork.m; sourceTree = "<group>"; };
 		04C31006293256A0004DC597 /* YZURLManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZURLManager.h; sourceTree = "<group>"; };
@@ -149,6 +158,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041177F12936ED8200E92F14 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				041177F22936EDB600E92F14 /* YZHomeCell.h */,
+				041177F32936EDB600E92F14 /* YZHomeCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		04C30D7F29325385004DC597 /* YZNetWork */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +278,11 @@
 			children = (
 				971D9110263EA8A20043DBEC /* YZHomeVC.h */,
 				971D9111263EA8A20043DBEC /* YZHomeVC.m */,
+				041177F12936ED8200E92F14 /* View */,
+				041177EE2936E71600E92F14 /* YZBaseModel.h */,
+				041177EF2936E71600E92F14 /* YZBaseModel.m */,
+				041177EB2936E6B800E92F14 /* YZGirlModel.h */,
+				041177EC2936E6B800E92F14 /* YZGirlModel.m */,
 				975E4A022763260B0007BE91 /* YZBaseObject.h */,
 				975E4A032763260B0007BE91 /* YZBaseObject.m */,
 				975E4A05276326310007BE91 /* YZSubObject.h */,
@@ -614,7 +637,9 @@
 				971D90C3263E9BCB0043DBEC /* ViewController.m in Sources */,
 				971D90BD263E9BCB0043DBEC /* AppDelegate.m in Sources */,
 				971D9145264170480043DBEC /* YZColorAndFont.m in Sources */,
+				041177F42936EDB600E92F14 /* YZHomeCell.m in Sources */,
 				971D9137263FFDC30043DBEC /* YZCollectionVC.m in Sources */,
+				041177ED2936E6B800E92F14 /* YZGirlModel.m in Sources */,
 				9789E96F26466A01002DB084 /* YZCollectionCell.m in Sources */,
 				971D9112263EA8A20043DBEC /* YZHomeVC.m in Sources */,
 				971D90CE263E9BCC0043DBEC /* main.m in Sources */,
@@ -628,6 +653,7 @@
 				97E195E326D6827E0004423A /* YZItemCell.m in Sources */,
 				97E195DD26D67DE30004423A /* YZItemModel.m in Sources */,
 				04C30D82293253CE004DC597 /* YZNetWork.m in Sources */,
+				041177F02936E71600E92F14 /* YZBaseModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
