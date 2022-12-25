@@ -50,6 +50,7 @@
     tableView.dataSource = self;
     tableView.delegate = self;
     [self.view addSubview:tableView];
+    // 添加时间水印的功能
 
 }
 
