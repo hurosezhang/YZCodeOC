@@ -1,23 +1,22 @@
 //
-//  YZBaseViewController.m
+//  YZAddTimeWaterMarkVC.m
 //  YZCodeOC
 //
-//  Created by zhangyongkang01 on 2021/5/2.
+//  Created by mac on 2022/12/26.
 //
 
-#import "YZBaseViewController.h"
+#import "YZAddTimeWaterMarkVC.h"
 
-@interface YZBaseViewController ()
+@interface YZAddTimeWaterMarkVC ()
 
 @end
 
-@implementation YZBaseViewController
+@implementation YZAddTimeWaterMarkVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
-    
+    self.title = @"添加时间水印";
 }
 
 /*

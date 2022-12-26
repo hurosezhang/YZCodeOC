@@ -11,10 +11,13 @@
 #import "YZNetWork.h"
 #import "YZGirlModel.h"
 #import "YZHomeCell.h"
+#import "YZItemModel.h"
+#import "YZAddTimeWaterMarkVC.h"
 
 @interface YZHomeVC ()<UITableViewDataSource,UITableViewDelegate>
 @property(nonatomic,strong)UITableView *tableView;
 @property(nonatomic,strong)YZGirlModel *girlModel;
+@property(nonatomic,strong)NSArray *dataArr;
 
 @end
 
@@ -24,7 +27,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"首页";
+    
+    [self setUpTableData]; // table 数据
     [self setUpView];
+    
     NSString *url = @"https://www.mxnzp.com/api/image/girl/list/random";
     
     // 防止循环引用，后续要补上
@@ -54,21 +60,40 @@
 
 }
 
+- (void)setUpTableData {
+    NSMutableArray *mutableArr = [NSMutableArray array];
+    YZItemModel *itemModel1 = [YZItemModel new];
+    itemModel1.title = @"添加时间水印";
+    itemModel1.logo = @"001";
+    [mutableArr addObject:itemModel1];
+
+    _dataArr = [NSArray arrayWithArray:mutableArr];
+}
+
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return self.dataArr.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath  {
     
+    YZItemModel *item = [self.dataArr objectAtIndex:indexPath.row];
     YZHomeCell *cell =[YZHomeCell cellWithTableView:tableView];
+    cell.model = item;
     return  cell;
     
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    YZCollectionVC * vc = [YZCollectionVC new];
+    YZItemModel *item = [self.dataArr objectAtIndex:indexPath.row];
+    if ([item.logo isEqualToString:@"001"]) {
+        YZAddTimeWaterMarkVC *addTimeWaterMarkVC = [[YZAddTimeWaterMarkVC alloc] init];
+        [self.navigationController pushViewController:addTimeWaterMarkVC animated:YES];
+    }
     
-    [self.navigationController pushViewController:vc animated:YES];
+//    YZCollectionVC * vc = [YZCollectionVC new];
+//    
+//    [self.navigationController pushViewController:vc animated:YES];
     
 }
 /*

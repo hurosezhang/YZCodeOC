@@ -10,6 +10,7 @@
 		041177ED2936E6B800E92F14 /* YZGirlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 041177EC2936E6B800E92F14 /* YZGirlModel.m */; };
 		041177F02936E71600E92F14 /* YZBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 041177EF2936E71600E92F14 /* YZBaseModel.m */; };
 		041177F42936EDB600E92F14 /* YZHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 041177F32936EDB600E92F14 /* YZHomeCell.m */; };
+		048621112959E4DD0004C1EE /* YZAddTimeWaterMarkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 048621102959E4DD0004C1EE /* YZAddTimeWaterMarkVC.m */; };
 		04C30D82293253CE004DC597 /* YZNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C30D81293253CE004DC597 /* YZNetWork.m */; };
 		04C31008293256A0004DC597 /* YZURLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C31007293256A0004DC597 /* YZURLManager.m */; };
 		10DE6231A7D6C17A6E9D88EB /* Pods_YZCodeOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB59674D5D13F16B46EFC5EC /* Pods_YZCodeOC.framework */; };
@@ -64,6 +65,8 @@
 		041177EF2936E71600E92F14 /* YZBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZBaseModel.m; sourceTree = "<group>"; };
 		041177F22936EDB600E92F14 /* YZHomeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZHomeCell.h; sourceTree = "<group>"; };
 		041177F32936EDB600E92F14 /* YZHomeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZHomeCell.m; sourceTree = "<group>"; };
+		0486210F2959E4DD0004C1EE /* YZAddTimeWaterMarkVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZAddTimeWaterMarkVC.h; sourceTree = "<group>"; };
+		048621102959E4DD0004C1EE /* YZAddTimeWaterMarkVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZAddTimeWaterMarkVC.m; sourceTree = "<group>"; };
 		04C30D80293253CE004DC597 /* YZNetWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZNetWork.h; sourceTree = "<group>"; };
 		04C30D81293253CE004DC597 /* YZNetWork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZNetWork.m; sourceTree = "<group>"; };
 		04C31006293256A0004DC597 /* YZURLManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZURLManager.h; sourceTree = "<group>"; };
@@ -278,6 +281,8 @@
 			children = (
 				971D9110263EA8A20043DBEC /* YZHomeVC.h */,
 				971D9111263EA8A20043DBEC /* YZHomeVC.m */,
+				0486210F2959E4DD0004C1EE /* YZAddTimeWaterMarkVC.h */,
+				048621102959E4DD0004C1EE /* YZAddTimeWaterMarkVC.m */,
 				041177F12936ED8200E92F14 /* View */,
 				041177EE2936E71600E92F14 /* YZBaseModel.h */,
 				041177EF2936E71600E92F14 /* YZBaseModel.m */,
@@ -642,6 +647,7 @@
 				041177ED2936E6B800E92F14 /* YZGirlModel.m in Sources */,
 				9789E96F26466A01002DB084 /* YZCollectionCell.m in Sources */,
 				971D9112263EA8A20043DBEC /* YZHomeVC.m in Sources */,
+				048621112959E4DD0004C1EE /* YZAddTimeWaterMarkVC.m in Sources */,
 				971D90CE263E9BCC0043DBEC /* main.m in Sources */,
 				97C8F1FF26D7C9AC000BFEF1 /* YZSubControllerVC.m in Sources */,
 				971D90FC263E9C6F0043DBEC /* YZBaseViewController.m in Sources */,

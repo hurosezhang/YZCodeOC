@@ -11,7 +11,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YZItemModel : NSObject
 
-@property(nonatomic,strong)NSString *name;
+
+/// title 名字
+@property(nonatomic,strong)NSString *title;
+
+/// 标识
+@property(nonatomic,strong)NSString *logo;
+
 
 @end
 

@@ -47,7 +47,7 @@
 - (void)setModel:(YZItemModel *)model {
     if (_model != model) {
         _model = model;
-        _titleLabel.text = model.name;
+        _titleLabel.text = model.title;
     }
 }
 

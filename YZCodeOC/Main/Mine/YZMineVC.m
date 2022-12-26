@@ -29,11 +29,11 @@
 - (void)setUpModel {
     NSMutableArray *mutableArr = [NSMutableArray array];
     YZItemModel *itemModel1 = [YZItemModel new];
-    itemModel1.name = @"01Renturn和break和Continue";
+    itemModel1.title = @"01Renturn和break和Continue";
     [mutableArr addObject:itemModel1];
     
     YZItemModel *itemModel2 = [YZItemModel new];
-    itemModel2.name = @"02号种子";
+    itemModel2.title = @"02号种子";
     [mutableArr addObject:itemModel2];
 
     _dataArr = [NSArray arrayWithArray:mutableArr];
@@ -62,7 +62,7 @@
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     YZItemModel *model = [self.dataArr objectAtIndex:indexPath.row];
-    if ([model.name containsString:@"01"]) {
+    if ([model.title containsString:@"01"]) {
         [self funBreakContinueBreak];
     }
     

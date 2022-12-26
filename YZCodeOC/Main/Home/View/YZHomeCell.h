@@ -6,10 +6,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YZItemModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface YZHomeCell : UITableViewCell
+
+@property(nonatomic,strong)YZItemModel *model;
 
 + (instancetype)cellWithTableView:(UITableView *)tableView;
 
